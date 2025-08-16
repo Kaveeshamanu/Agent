@@ -91,6 +91,7 @@ class CustomerFeedbackAgent:
             'superb', 'brilliant', 'magnificent', 'terrific', 'good', 'nice',
             'tasty', 'fresh', 'clean', 'friendly', 'fast', 'quick'
         ]
+        self.positive_keywords.extend(['😊', '👍', '🔥', '💯', '❤️', '😍', '🤤', '🌟', '✨', '👌'])
         
         self.negative_keywords = [
             'terrible', 'awful', 'horrible', 'disgusting', 'worst', 'bad',
@@ -98,6 +99,9 @@ class CustomerFeedbackAgent:
             'disappointing', 'hate', 'never', 'overpriced', 'bland', 'soggy',
             'burnt', 'undercooked', 'salty', 'spicy', 'bitter'
         ]
+
+        
+        self.negative_keywords.extend(['😠', '😡', '🤮', '👎', '💩', '😤', '😞', '🤢'])
     
     def analyze_sentiment(self, text: str) -> SentimentResult:
         """Analyze sentiment using multi-layer approach"""
