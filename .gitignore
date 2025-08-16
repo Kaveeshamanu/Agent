@@ -1,0 +1,323 @@
+# SteamNoodles Feedback Agent - Git Ignore Rules
+
+# =============================================================================
+# ENVIRONMENT & SECRETS
+# =============================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+config.local.py
+secrets.json
+api_keys.txt
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+steamnoodles-env/
+
+# =============================================================================
+# IDE & EDITORS
+# =============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# OPERATING SYSTEM
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+# Logs
+logs/*.log
+logs/*.txt
+*.log
+
+# Output files
+outputs/*.png
+outputs/*.jpg
+outputs/*.pdf
+outputs/*.csv
+outputs/*.json
+outputs/temp_*
+outputs/cache_*
+
+# Data files (keep structure, ignore content)
+data/*.csv
+data/*.json
+data/*.txt
+data/*.db
+data/*.sqlite
+data/raw_*
+data/processed_*
+data/temp_*
+
+# Cache files
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Model files (large files)
+models/*.bin
+models/*.pt
+models/*.pth
+models/*.h5
+models/*.pkl
+*.model
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+.temp/
+
+# =============================================================================
+# DOCUMENTATION
+# =============================================================================
+# Generated documentation
+docs/_build/
+docs/build/
+site/
+
+# =============================================================================
+# TESTING
+# =============================================================================
+# Test outputs
+test_outputs/
+test_results/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# =============================================================================
+# DEPLOYMENT
+# =============================================================================
+# Docker
+.dockerignore
+Dockerfile.local
+docker-compose.override.yml
+
+# Kubernetes
+*.k8s.local.yaml
+
+# Heroku
+.env.production
+
+# =============================================================================
+# DEPENDENCIES
+# =============================================================================
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =============================================================================
+# BACKUP FILES
+# =============================================================================
+*.bak
+*.backup
+*.old
+*_backup
+*_old
+backup_*
+
+# =============================================================================
+# SENSITIVE DATA
+# =============================================================================
+# Configuration files with secrets
+config_production.py
+settings_local.py
+local_settings.py
+
+# Database files
+*.db
+*.sqlite3
+*.sqlite
+
+# =============================================================================
+# PERFORMANCE & PROFILING
+# =============================================================================
+*.prof
+*.pstats
+profile_*
+benchmark_*
+
+# =============================================================================
+# MISC
+# =============================================================================
+# Archives
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Lock files
+poetry.lock
+Pipfile.lock
+
+# Node.js (if using any JS tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =============================================================================
+# KEEP THESE FILES/DIRECTORIES
+# =============================================================================
+# Force include important empty directories
+!data/.gitkeep
+!outputs/.gitkeep
+!logs/.gitkeep
+!models/.gitkeep
+
+# Keep example/template files
+!*.example
+!*.template
+!sample.*
+
+# Keep documentation
+!docs/
+!README.md
+!*.md
+
+# =============================================================================
+# LOCAL DEVELOPMENT
+# =============================================================================
+# Personal notes and TODO files
+TODO.txt
+NOTES.txt
+personal_*
+draft_*
+scratch_*
+
+# Local configuration overrides
+local_*
+dev_*
+debug_*
