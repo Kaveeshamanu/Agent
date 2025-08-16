@@ -6,3 +6,8 @@
 * Visual Analytics - Interactive charts and sentiment trends
 * Batch Processing - Handle multiple feedbacks efficiently
 * Multi-language Support - Process feedback in various languages
+
+# <small> Tools & Technologies used,</small>
+* AI/ML features
+* OpenAI API for advanced LLM based sentiment analysis
+* MatplotLob for data visualization & chart generation
